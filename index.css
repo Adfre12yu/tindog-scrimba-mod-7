@@ -45,6 +45,15 @@ main {
     padding: 1em;
 }
 
+.badge {
+    position: absolute;
+    top: 0;
+    margin: 2.3em 1em;
+    width: 45%;
+    transform: rotate(-30deg);
+    animation: zoomOut 0.2s;
+}
+
 h2 {
     color: #b7b7b7;
     font-weight: 400;
@@ -103,5 +112,15 @@ button {
 @media (max-width: 1200px) {
     .container {
         width: 40%;
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 45%;
     }
 }
